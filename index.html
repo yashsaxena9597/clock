@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Analog clock!</title>
+
+</head>
+<style type="text/css">
+	.grad {
+ background: rgb(97,188,190);
+background: linear-gradient(90deg, rgba(97,188,190,1) 21%, rgba(0,255,239,0.9416141456582633) 60%, rgba(25,250,210,1) 88%);
+  height: 100vh;
+ display: flex;
+      overflow: hidden; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.bord{
+        
+      display: flex;
+      overflow: hidden;  
+    box-shadow: 5px 5px 5px 5px ;
+     border-radius: 100%;
+     height:400px;
+     width: 400px;
+   margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:#0D0C0C ;
+}
+.twelve{
+    position: absolute;
+  width: 8px;
+  height: 15px;
+  color:gray;
+  left:0;
+  top: 0;
+  right: 13px;
+  margin: 0 auto;
+  font-size: 25px;
+
+}
+.one{
+  margin-left: 48%;
+   transform: rotate(30deg);
+   font-size: 25px;
+   color: gray;
+
+}
+.two{
+    margin-left: -5%;
+   transform: rotate(60deg);
+   font-size: 25px;
+   color: gray;
+
+}
+.four{
+   margin-left: 0;
+   transform: rotate(120deg);
+   font-size: 25px;
+   color: gray;
+
+
+}
+.five{
+   margin-left: -5%;
+   transform: rotate(150deg);
+   font-size: 25px;
+   color: gray;
+
+
+}
+.seven{
+   margin-left: -5%;
+   transform: rotate(210deg);
+   font-size: 25px;
+   color: gray;
+
+
+}
+.eigth{
+   margin-left: -1%;
+   transform: rotate(240deg);
+   font-size: 25px;
+   color: gray;
+
+
+}
+.ten{
+   margin-left: -5%;
+   transform: rotate(-60deg);
+   font-size: 25px;
+   color: gray;
+
+
+}
+.eleven{
+   margin-left: -7%;
+   transform: rotate(-30deg);
+   font-size: 25px;
+   color: gray;
+
+
+}
+.six{
+    position: absolute;
+  width: 8px;
+  height: 35px;
+  color:gray;
+  left:0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 25px;
+
+}
+.nine{
+    position: absolute;
+  width: 25px;
+  height: 16px;
+ color:gray;
+ font-size: 25px;
+  top: 0;
+  bottom: 6px;
+  left: 4px;
+  margin: auto 0;
+
+}
+.three{
+    position: absolute;
+  width: 25px;
+  height: 15px;
+ color:gray;
+  top: 0;
+  bottom: 20px;
+  right: 5px;
+  margin: auto 0;
+  font-size: 25px;
+
+}
+
+
+.center
+{
+     position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 100%;
+  left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+   background-color:gray;
+
+
+}
+#seconds {
+  position: absolute;
+  height: 200px;
+  width: 2px;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+  top: 0px;
+  margin: auto;
+  background: #000;
+  -webkit-transform-origin: bottom;
+  background: #ff4136;
+
+}
+
+#minutes {
+  position: absolute;
+  height: 160px;
+  width: 2px;
+  left: 0;
+  right: 0;
+  bottom: 170px;
+  top: 8px;
+  margin: auto;
+  background: #000;
+  -webkit-transform-origin: bottom;
+  background:gray;
+}
+
+#hours {
+  position: absolute;
+  height: 80px;
+  width: 6px;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  top: 0px;
+  margin: auto;
+  background: #000;
+ transform-origin: bottom;
+  background:gray;
+}
+#digi{
+  
+  font-size: 50px;
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  color:gray;
+  left: 0;
+  right: 150px;
+  margin: auto;
+  height: 2%;
+  width: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</style>
+
+<body  >
+    <div class="grad">
+        <div class=" container text-center " style="">
+            <h1> Clock</h1>
+        </div>
+        
+            <div class="bord">
+              <div id="digi"></div>
+                <div id="hours"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
+                <div class="twelve"><div>12</div></div>
+                <div class="three"><div>3</div></div>
+                <div class="six"><div>6</div></div>
+                <div class="nine"><div>9</div></div> 
+                <div class="one"><div style="transform: rotate(-30deg);">1</div></div>
+                <div class="two"><div style="transform: rotate(-60deg);">2</div></div> 
+                <div class="four"><div style="transform: rotate(-120deg);" >4</div></div> 
+                <div class="five"><div style="transform: rotate(-150deg);">5</div></div>
+                 <div class="seven"><div style="transform: rotate(-210deg);">7</div></div>
+                  <div class="eigth"><div style="transform: rotate(-240deg);">8</div></div> 
+                  <div class="ten"><div style="transform: rotate(60deg);">10</div></div> 
+                  <div class="eleven"><div style="transform: rotate(30deg);">11</div></div>  
+                <div class="center"></div>
+
+
+
+
+
+
+            </div>
+       
+        
+    </div>
+    
+</body>
+<script type="text/javascript" src="time.js" ></script>
+</html>
